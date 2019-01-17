@@ -1,0 +1,6 @@
+buildVersion=${GIT_COMMIT: -7}
+echo ${buildVersion}
+
+
+/usr/libexec/PlistBuddy -c 'Set CFBundleShortVersionString 1.0.'"${buildVersion}"'' velo.xcarchive/Products/Applications/Velo.app/Info.plist 
+ 
